@@ -793,7 +793,7 @@ Thử nhập /flag.txt thêm vào đường link của web. Thấy được flag
 
 Flag: `ISPCTF{HAv3_Fnu_Vvlt5_W3b}`
 
-# Keiichi
+# Web: Keiichi
 #### Challegen
 
 Kho báu bị ẩn giấu trong mê cung, chắc chắn phải có cách tìm ra nó.
@@ -871,7 +871,7 @@ Flag: `ISPCTF{H3_1S_C0m3B4ck_Y0u_Can_find_him}`
 
 Flag: `ISPCTF{N0w_Y0u_Kn3w_4b0ut_ISP_Y0ur_W3lC0m3}`
 
-# SQLi Blind
+# Web: SQLi Blind
 #### Challegen
 
 #### Solution
@@ -993,7 +993,7 @@ Tìm `table_name` trong `tables` và `column_name` trong `columns`<br>
   - > Cuối cùng nhấn `start-attack` 
 
   - >Nếu bạn không có burpPro thì khoảng vài tiếng sẽ cho ra kết quả sau:
-   - >![](images/23.png)
+   - >![](Writeup-MIniCTF2022/File chall/images/23.png)
    - > Loại bỏ tất cả các hàng không match được với `success`
    - > Sắp xếp lại `payload1` từ 1->60 đi kèm với `payload2`
     - > ![](images/24.png)
@@ -1036,7 +1036,7 @@ Dựa theo đề bài, mình tìm tool decode Caesar và xử lí mật mã vớ
 
 Flag: `ISPCTF{h3ll0_ISP_1337}`
 
-# UwU
+# Crypto: UwU
 #### Challegen
 
 Không ngờ rằng xipan lại cẩn thận thế này. Bốp và các bạn phải cố gắng hơn thôi.
@@ -1045,15 +1045,15 @@ Không ngờ rằng xipan lại cẩn thận thế này. Bốp và các bạn ph
 
 Challenge này cung cấp một đoạn mã khá ngắn. Nếu như không nhận diện được ngay đoạn mã là gì thì có thể dùng google để tìm các trang web có thể giải mã:
 
-![search](1.png)
+![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/UwU/1.png)
 
 Có thể vào luôn tranng web đầu tiên để thử, ở đây mình thử paste tên của challenge vào để thử tìm ra được gì:
 
-![search](2.png)
+![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/UwU/2.png)
 
 Mình tìm thấy khá nhiều mã có tên gần giống với lại tên challenge. Mình chọn mã `UU` để thử và tìm ra flag:
 
-![search](3.png)
+![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/UwU/3.png)
 
 Flag: `ISPCTF{UU_3ncode_not_UwU}`
 
@@ -1076,22 +1076,22 @@ Flag: `ISPCTF{HOW_CAN_YOU_FIX_IT_?}`
 #### Challegen
 <p>Xipan đã tạo ra mê cung nhằm đánh lạc hướng chúng ta, các bạn hãy theo Bốp để không bị lạc nhé!<p>
 
-[Sau.png](Sau.png)
+[picture.png](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Sau.png)
 
-![search](Sau.png)
+![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Sau.png)
 
 #### Solution
 
 <p>Tác giả đã cho ta 1 bức ảnh trông khá ngộ nghĩnh, trông khá giống là 1 mã QR, nhưng khi quét thì không được gì?? Lúc này, hint nói rằng "Bạn có biết định dạng chuẩn của 1 mã QR không?" thì sau 1 hồi học về QR thì mình biết mã này bị khuất mất 3 ô vuông định vị ở 3 góc. Việc cần làm lúc này là chèn thêm 3 ô vuông đó vào cho đúng vị trí của nó thôi :D Sau khi photoshop thì ta đã có 1 mã QR hoàn chỉnh:<p>
 
-![search](Goc.png)
+![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Goc.png)
 
 Sau khi quét thì nhận được 1 bức ảnh với 1 dòng chữ bên dưới trông có vẻ giống form Flag nhưng đã bị mã hóa
 
-![search](Quet1.png)
+![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Quet1.png)
 
 Lúc này mình mới nhớ tên Chall là ROTTOR nên chắc rằng nó có liên quan tới chìa khóa để giải mã dòng chữ kia, tra thêm 1 tí thì mình biết nó được mã hóa bằng mã ROT13
 
-![search](Fi.png)
+![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Fi.png)
 
 Flag: `ISPCTF{0h_mY_90D_y0u_931_i1}`
