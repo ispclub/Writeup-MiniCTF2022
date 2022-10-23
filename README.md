@@ -898,7 +898,7 @@ Flag: `ISPCTF{N0w_Y0u_Kn3w_4b0ut_ISP_Y0ur_W3lC0m3}`
 - <image src="https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/5.png" width="50%"> <br>Vào xong thấy ối dồi ôi luôn :(
 
 > Trong khi trải nghiệm web, bạn sẽ phát hiện ra, các button order sản phẩm đã tạo ra 1 truy vấn có thể nhìn thấy trên Url. Các truy vấn này có thể được truy vấn tới tới databases, hoặc là không :(<br>
-- <image src="./images/6.png" width="70%">
+- <image src="https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/6.png" width="70%">
 - Khi nhấn `women`  truy vấn `'?category=women'` được gọi.
 
 > Ta thấy các sản phẩm được xuất ra sau khi truy vấn, như vậy nếu như ở đây có lỗ hổng, các thông tin chúng ta cần biết như `'column_name'` `'table_name'` cũng sẽ được hiện ra đây ở đây, nếu như select đúng :>
@@ -911,13 +911,13 @@ Flag: `ISPCTF{N0w_Y0u_Kn3w_4b0ut_ISP_Y0ur_W3lC0m3}`
 
 > Vậy kiểm tra xem `union` có thực sự hoạt động hay không<br>
 > Ta thử với payload sau:  `category=women'union+select+null,null,null,null%23`
-- ><image src="./images/8.png"><br>
+- ><image src="https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/8.png"><br>
    >Sản phẩm trả về gồm 4 sản phẩm của `women` và 1 sản phẩm `NULL` được select. Như vậy có thể khai thác bằng cách tiêm `union` vào truy vấn.
 - > Trong BurpSuite cũng có thể thấy, số hàng trả về là 5
-  - > <image src="./images/9.png"> 
+  - > <image src=" https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/9.png"> 
 - > Kiểm tra giá trị trả về, xem cột nào trong 4 cột chấp nhập kiểu chuỗi, từ đó có thể tiêm payload vào. Làm như sau: 
   - > Với 2 đối số đầu tiên, ta thay `Null` bằng chuỗi `ngn`, nhấn send và sản phẩm của `NULL` cũng trả ra 2 chuỗi `ngn`. vậy ta sẽ khai khác theo 2 đối số này
-  - > <image src="./images/10.png">
+  - > <image src="https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/10.png">
 
 > Vậy thì bây giờ làm sao để tìm được Flag? Chắc chắn cái bảng chứa Flag nó sẽ nằm ở đâu đó trong `tables`, cột chứa Flag sẽ nằm đâu đó trong `columns`.
 > Vậy thì tiếp tục đi tìm các `table_name` và `column_name` thôi.<br>
@@ -927,7 +927,7 @@ Tìm `table_name` trong `tables` và `column_name` trong `columns`<br>
 > Tìm `table_name` trong `tables`: 
  - > Ta có truy vấn: <br>`category=women'union+select+table_name,null,null,null+from+information_schema.tables%23`
    > Ném payload lên truy vấn ta thấy một đống tên bảng được hiện ra:
-   - > <image src="./images/11.png" width="70%">
+   - > <image src="https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/11.png" width="70%">
    - > Giờ thì tìm bảng nào có ích thôi :(
    - > Khi kéo đến cuối ta tìm được 2 bảng khả nghi là `products` và `sqli_blind` <br>
       - `products` thì chắc là bảng chứa sản phẩm
