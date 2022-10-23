@@ -23,7 +23,7 @@
 | [Correct File?](#Forensics-Correct-File?) | Forensics | `ISPCTF{i_am_following_you}` |
 | [Japanese Food](#Forensics-Japanese-Food) | Forensics | `ISPCTF{Pe0ple_mAke_1t_complicat3d}` |
 | [Love n Light](#Forensics-Love-n-Light) | Forensics | `ISPCTF{Fr0m_kA1z_w1tH_L0v3}` |
-| [Where is Nemo?](#Forensics-Where-is-Nemo?) | Forensics | `ISPCTF{y0u_5ave_Nem0_f15h}` |
+| [Where is Nemo?](#Forensics-Where-is-Nemo) | Forensics | `ISPCTF{y0u_5ave_Nem0_f15h}` |
 | [Are you Wibu?](#Forensics-Are-you-Wibu?) | Forensics | `ISPCTF{w1bu_n3v3r_d13_1337}` |
 | [OnlyFan](#Forensics-OnlyFan) | Forensics | `ISPCTF{r0und_n_r0und_1908absc}` |
 | [PHP Moon Cake](#Web-PHP-Moon-Cake)| Web | `ISPCTF{m00n_c4k3_15_t00_sw33t}` |
@@ -32,11 +32,11 @@
 | [Keiichi](#Web-Keiichi) | Web | `ISPCTF{H3_1S_C0m3B4ck_Y0u_Can_find_him}` |
 | [ISP Info](#Web-ISP-Info) | Web | `ISPCTF{N0w_Y0u_Kn3w_4b0ut_ISP_Y0ur_W3lC0m3}` |
 | [Sqli Blind](#WEB-Sqli-Blind) | Web | `ISPCTF{Bl1nd_brut3f0rc3_01fg6}` |
-| [Do you know what is Basecrack](#Crypto-Do-you-know-what-is-basecrack-:>) | Crypto | `ISPCTF{1_you_kn0w_Base_Crack}` |
+| [Do you know what is Basecrack](#Crypto-Do-you-know-what-is-basecrack) | Crypto | `ISPCTF{1_you_kn0w_Base_Crack}` |
 | [Caesar Knight](#Crypto-Caesar-Knight) | Crypto | `ISPCTF{h3ll0_ISP_1337}` |
 | [UwU](#Crypto-UwU) | Crypto | `ISPCTF{UU_3ncode_not_UwU}` |
 | [Love Song](#Crypto-Love-Song) | Crypto | `ISPCTF{HOW_CAN_YOU_FIX_IT_?}` |
-| [You are noob!](#Crypto-You-are-noob-!!) | Crypto | `ISPCTF{c4T_M3_1f_u_C4n?}` |
+| [You are noob!](#Crypto-You-are-noob!!) | Crypto | `ISPCTF{c4T_M3_1f_u_C4n?}` |
 | [ROTTOR](#Crypto-ROTTOR) | Crypto | `ISPCTF{0h_mY_90D_y0u_931_i1}` |
 
 # Welcome: Discord
@@ -1005,7 +1005,7 @@ Tìm `table_name` trong `tables` và `column_name` trong `columns`<br>
 
 Flag: `ISPCTF{Bl1nd_brut3f0rc3_01fg6}`
 
-# Crypto: Do you know what is basecrack :>
+# Crypto: Do you know what is basecrack
 #### Challenge
  
  <p> Đôi khi code bẩn cũng cần được bóc tách mới tìm thấy được tinh hoa. Bạn có đủ kiên trì chứ???<p>
@@ -1099,7 +1099,7 @@ Lúc này mình mới nhớ tên Chall là ROTTOR nên chắc rằng nó có li�
 
 Flag: `ISPCTF{0h_mY_90D_y0u_931_i1}`
 
-# Crypto: You are noob !!
+# Crypto: You are noob!!
 #### Challenge
 
 Hừm, các dấu chân khả nghi rải rác quanh đây! Nhất định tín hiệu ở đâu đó không xa.
