@@ -762,16 +762,22 @@ Tải file về không mở được, thử đổi đuôi tên thành .jpg , m�
 
 <img src= https://raw.githubusercontent.com/Dongkong1908/MiniCTF-2022/main/Are%20you%20Wibu/wibu_1.png height=600>
 
-Nhìn qua ảnh, biết được ảnh bị chồng/ dồn pixel theo chiều ngang, nên phải sửa độ phân giải của ảnh. Xem propertises/ detail của ảnh, biết được chiều rộng của ảnh hiện tại đang là 642px
+<p> Nhìn qua ảnh, biết được ảnh bị chồng/ dồn pixel theo chiều ngang, nên phải sửa độ phân giải của ảnh. <p>
+<p> Trước hết, cho ảnh vào hxd hoặc hexed.it để biết được đúng dạng file của ảnh (png, jpg hay jpeg,....) và biết được dạng đúng của nó là jpg hay chính là jpeg<p>
+<p> Xem propertises/ detail của ảnh, biết được chiều rộng của ảnh hiện tại đang là 642px <p>
 
 <img src= https://raw.githubusercontent.com/Dongkong1908/MiniCTF-2022/main/Are%20you%20Wibu/wibu_2.png height=500>
 
 
-Đổi 642 sang Hex thấy được giá trị của nó là 02 82. Mở ảnh bằng Hxd hoặc Hexed.it để tìm vị trí byte chứa size ảnh 
+Đổi 642 sang Hex thấy được giá trị của nó là 02 82. Mở ảnh bằng Hxd hoặc Hexed.it để tìm vị trí byte chứa size ảnh (thường thì vị trí sẽ ở ngay những byte đầu tiên)
+
+<img src= https://raw.githubusercontent.com/Dongkong1908/MiniCTF-2022/main/Are%20you%20Wibu/wibu_5.png weight=500px >
+
+Và ở ngay byte FF C0, có được giá trị độ rộng của ảnh ở gần đó 
 
 <img src= https://raw.githubusercontent.com/Dongkong1908/MiniCTF-2022/main/Are%20you%20Wibu/wibu_3.png>
 
-Thử thay đổi liên tục thì biết được giá trị đúng của nó là 07 82 tương ứng 1922px, mở ảnh ta thấy flag
+Tăng độ rộng liên tục (do ảnh bị chồng pixel) hoặc sử dụng công thức trong [wiki](https://en.wikipedia.org/wiki/JPEG) thì biết được giá trị đúng của nó là 07 82 tương ứng 1922px, mở ảnh là thấy flag
 
 <img src= https://raw.githubusercontent.com/Dongkong1908/MiniCTF-2022/main/Are%20you%20Wibu/wibu_4.png>
 
