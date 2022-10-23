@@ -72,7 +72,7 @@ Flag: `ISPCTF{7hAt_warm_up_gnys}`
 # Warm Up:  NetCat
 
 
-#### Challegen
+#### Challenge
 
 Can you connect the netcat ? 
 >nc 174.138.21.217 3136
@@ -98,7 +98,7 @@ Flag: `ISPCTF{Th1s_1s_n3t_c4t}`
 
 # Warm Up: abcbof
 
-#### Challegen
+#### Challenge
 >nc 174.138.21.217 3137
 
 #### Solution
@@ -191,7 +191,7 @@ Flag: `ISPCTF{B4s1c_Buff3r_0v3rFl0w}`
 
 # Warm Up: RPS
 
-#### Challegen
+#### Challenge
 
 >nc 174.138.21.217 3138
 
@@ -254,7 +254,7 @@ ISPCTF{d0nt_m4k3_7h3_l091c4l_m1s74k3}
 Flag: `ISPCTF{d0nt_m4k3_7h3_l091c4l_m1s74k3}`
 
 # Misc: Best Avatar
-#### Challegen
+#### Challenge
 Việc đầu tiên là cần tìm đồng minh, hãy nhanh chóng vào cộng đồng ISP để tìm nàoo!!
 #### Solution
 <p>Vào page CLB ISP- CLB An Toàn Thông Tin PTIT, mở Avatar của CLB lên để thấy flag ở phần comment<p>
@@ -264,7 +264,7 @@ Việc đầu tiên là cần tìm đồng minh, hãy nhanh chóng vào cộng �
 Flag: `ISPCTF{ISP_cAptu5e_th3_F1a9}`
 
 # Misc: New Misc
-#### Challegen
+#### Challenge
 Trên hành trình giải cứu thế giới Bốp đã gặp Dipper & Mable và biết được rằng Xipan đang câu kết với Bill Tam Giác để phát tán code bẩn. Hãy giúp Dipper & Mable ngăn chặn điều đó lại!
 
 [New_misc.zip](https://github.com/Dongkong1908/MiniCTF-2022/blob/main/New%20Misc/New_misc.zip)
@@ -291,7 +291,7 @@ Flag: `ISPCTF{BILLCIPHER}`
 
 # RE: Baby Kinzx
 
-#### Challegen
+#### Challenge
 
 ##### Source Code
 
@@ -350,7 +350,7 @@ for(int i=0;i<l;i+=8)
 Flag: `ISPCTF{_bit_bitch_beach}`
 
 # RE: EZ RE #
-#### Challenge 
+#### Challenge
 ##### Source Code 
 
 ```C
@@ -461,7 +461,7 @@ cout<<s;
 Flag: `ISPCTF{d35cr4mbl3_tH3_cH4r4cT3r5_ff63b0}`
 
 # RE: Loop Key 
-#### Challegen
+#### Challenge
 ##### Source Code 
 
 ```C++
@@ -531,7 +531,7 @@ int main(){
 Flag: `ISPCTF{T01_co_kh1en_ban_vu1_12112003}`
 
 # RE: XOR
-#### Challegen
+#### Challenge
 
 ##### Source Code
 
@@ -647,7 +647,7 @@ int main()
 Flag: `ISPCTF{N0r_1s_s0_M4g1c}`
 
 # Forensics: Correct File?
-#### Challegen
+#### Challenge
 Có tiếng nhạc văng vẳng đâu đây, liệu có phải là tín hiệu?
 
 [file.zip](https://github.com/Dongkong1908/MiniCTF-2022/blob/main/Correct%20File/file.zip?raw=true)
@@ -661,7 +661,7 @@ Giải nén file trên được 1 file mp3. Nghe ra là 1 đoạn nhạc. Vì đ
 Flag: `ISPCTF{i_am_following_you}`
 
 # Forensic : Love n Light #
-#### Challegen
+#### Challenge
 
 <p>Ánh sáng và bóng tối,Bốp đã có thể đối đầu trực diện với Xipan<p>
 
@@ -677,7 +677,7 @@ Flag: `ISPCTF{i_am_following_you}`
  Flag: `ISPCTF{From_kA1z_w1tH_LOv3}`
 
 # Forensics: Where is Nemo?
-#### Challegen
+#### Challenge
 Nemuuu là chú pet robot được Bốp rất yêu quý. Không may chú đã bị dính code bẩn và chạy lung tung không nhớ được về. Hãy giúp Bốp mang Nemu về nhé, đừng bỏ cuộc!!! Rescue Nemooo :<
 
 [Where_is_Nemo.jpg](https://github.com/Dongkong1908/MiniCTF-2022/blob/main/Where%20is%20Nemo/Where_is_Nemo.zip?raw=true)
@@ -735,7 +735,7 @@ Thử thay đổi liên tục thì biết được giá trị đúng của nó l
 Flag: `ISPCTF{w1bu_n3v3r_d13_1337}`
 
 # Forensics: OnlyFan
-#### Challegen
+#### Challenge
 
 Đây rồi, con đường dẫn đến nơi trú ngụ của Xipan, đi theo con đường này chúng ta sẽ tìm được hắn.
 
@@ -794,7 +794,7 @@ Thử nhập /flag.txt thêm vào đường link của web. Thấy được flag
 Flag: `ISPCTF{HAv3_Fnu_Vvlt5_W3b}`
 
 # Web: Keiichi
-#### Challegen
+#### Challenge
 
 Kho báu bị ẩn giấu trong mê cung, chắc chắn phải có cách tìm ra nó.
 
@@ -829,7 +829,7 @@ Flag: `ISPCTF{H3_1S_C0m3B4ck_Y0u_Can_find_him}`
 
 # Web: ISP Info
 
-#### Challegen 
+#### Challenge
 
 Ôi, chúng ta gặp rắc rối không nhỏ rồi, hàng rào bảo mật đang ngăn cản ta. 
 
@@ -875,7 +875,7 @@ Flag: `ISPCTF{H3_1S_C0m3B4ck_Y0u_Can_find_him}`
 Flag: `ISPCTF{N0w_Y0u_Kn3w_4b0ut_ISP_Y0ur_W3lC0m3}`
 
 # Web: SQLi Blind
-#### Challegen
+#### Challenge
 
 #### Solution
 ##### Bước 1 
@@ -1006,7 +1006,7 @@ Tìm `table_name` trong `tables` và `column_name` trong `columns`<br>
 Flag: `ISPCTF{Bl1nd_brut3f0rc3_01fg6}`
 
 # Crypto: Do you know what is basecrack :>
-#### Challegen
+#### Challenge
  
  <p> Đôi khi code bẩn cũng cần được bóc tách mới tìm thấy được tinh hoa. Bạn có đủ kiên trì chứ???<p>
  
@@ -1022,7 +1022,7 @@ Flag: `ISPCTF{Bl1nd_brut3f0rc3_01fg6}`
 Flag : `ISPCTF{1_you_kn0w_Base_Crack}`
 
 # Crypto: Caesar Knight
-#### Challegen
+#### Challenge
 Một chút nữa thôi là chúng ta có thể lấy được kho báu để đối phó với Xipan rồi. Tiến lên thôi nào các bạn!!!
 
 [flag_here.txt](https://github.com/Dongkong1908/MiniCTF-2022/blob/main/Caesar%20Knight/Flag_here.txt)
@@ -1040,7 +1040,7 @@ Dựa theo đề bài, mình tìm tool decode Caesar và xử lí mật mã vớ
 Flag: `ISPCTF{h3ll0_ISP_1337}`
 
 # Crypto: UwU
-#### Challegen
+#### Challenge
 
 Không ngờ rằng xipan lại cẩn thận thế này. Bốp và các bạn phải cố gắng hơn thôi.
 
@@ -1061,7 +1061,7 @@ Mình tìm thấy khá nhiều mã có tên gần giống với lại tên chall
 Flag: `ISPCTF{UU_3ncode_not_UwU}`
 
 # Crypto: Love Song 
-#### Challegen
+#### Challenge
 Ôi, chúng ta phải làm gì để có thể kết nối với Bốp đây?
 
 [What_is_it.mp3](https://github.com/Dongkong1908/MiniCTF-2022/blob/main/Love%20Song/What%20is%20it_.mp3?raw=true)
@@ -1076,7 +1076,7 @@ Flag: `ISPCTF{HOW_CAN_YOU_FIX_IT_?}`
 
 # Crypto: ROTTOR
 
-#### Challegen
+#### Challenge
 <p>Xipan đã tạo ra mê cung nhằm đánh lạc hướng chúng ta, các bạn hãy theo Bốp để không bị lạc nhé!<p>
 
 [picture.png](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Sau.png)
@@ -1100,7 +1100,7 @@ Lúc này mình mới nhớ tên Chall là ROTTOR nên chắc rằng nó có li�
 Flag: `ISPCTF{0h_mY_90D_y0u_931_i1}`
 
 # Crypto: You are noob !!
-#### Challegen
+#### Challenge
 
 Hừm, các dấu chân khả nghi rải rác quanh đây! Nhất định tín hiệu ở đâu đó không xa.
 
