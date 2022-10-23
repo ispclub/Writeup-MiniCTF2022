@@ -189,6 +189,7 @@ ISPCTF{B4s1c_Buff3r_0v3rFl0w}
 
 Flag: `ISPCTF{B4s1c_Buff3r_0v3rFl0w}`
 
+
 # Warm Up: RPS
 
 #### Challenge
@@ -262,6 +263,26 @@ Việc đầu tiên là cần tìm đồng minh, hãy nhanh chóng vào cộng �
 <img src=https://raw.githubusercontent.com/Dongkong1908/MiniCTF-2022/main/Best%20Avatar/best_avatar.png>
 
 Flag: `ISPCTF{ISP_cAptu5e_th3_F1a9}`
+
+# Misc: Base64
+
+#### Challenge
+ QQRR
+
+#### Solution
+Bài cho chúng ta 1 mã QR
+
+![image](https://user-images.githubusercontent.com/91616280/197390779-a7211cb8-29c7-438b-944f-ace1c25af825.png)
+
+Quét mã QR ra được đoạn mã base64
+
+![image](https://user-images.githubusercontent.com/91616280/197390839-b2715d5b-48a6-40f0-b6e0-6ce8c15fbb2d.png)
+
+Giải mã nó ta được flag 
+
+![image](https://user-images.githubusercontent.com/91616280/197390894-1a05d988-c2be-4daa-9691-b8ab75f4a80f.png)
+
+Flag: `ISPCTF{H4v3_4_G00D_D4y}`
 
 # Misc: New Misc
 #### Challenge
@@ -753,6 +774,24 @@ Dùng photoshop để xoáy lại ảnh (ở đây mình dùng photopea) và l�
 <img src= https://raw.githubusercontent.com/Dongkong1908/MiniCTF-2022/main/OnlyFan/onlyfan.png height=300px width=500px>
 
 Flag: `ISPCTF{r0und_n_r0und_1908absc}`
+
+# PHP moon cake
+#### Challenge
+Yummy bánh trung thu ngon thật đấy. Có gì ngon nghẻ đằng sau lớp áo đẹp đẽ đó vậy?
+#### Solution
+
+Bài cho ta một trang web đăng nhập hoặc đăng ký đăng ký và đăng nhập bình thường nhưng chẳng có gì cả. Đọc source ta thấy flag
+
+`ISPCTF{134rn1n9_web_15_3z}`
+
+<img src= https://github.com/dnamgithub33/WUMiniCTF-2022/blob/main/fakeflag.PNG>
+
+Nhưng dây là flag sai, tiếp tục đọc source .css ta  thấy flag
+
+<img src= Writeup-MiniCTF2022/File-chall/PHP-Moon-Cake/PHP-moon-cake/trueflag.png>
+
+
+Flag: `ISPCTF{m00n_c4k3_15_t00_sw33t}`
 
 # Web: Get Out Of Here 
 #### Challenge
