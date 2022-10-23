@@ -660,7 +660,7 @@ Giải nén file trên được 1 file mp3. Nghe ra là 1 đoạn nhạc. Vì đ
 
 Flag: `ISPCTF{i_am_following_you}`
 
-# Forensics : Love n Light 
+# Forensics: Love n Light 
 #### Challenge
 
 <p>Ánh sáng và bóng tối,Bốp đã có thể đối đầu trực diện với Xipan<p>
