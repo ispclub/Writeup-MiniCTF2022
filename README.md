@@ -1079,7 +1079,7 @@ Flag: `ISPCTF{Bl1nd_brut3f0rc3_01fg6}`
 
 - Cuối cùng, ta sẽ tìm ra được flag
 
-Flag : `ISPCTF{1_you_kn0w_Base_Crack}`
+Flag: `ISPCTF{1_you_kn0w_Base_Crack}`
 
 # Crypto: Caesar Knight
 #### Challenge
@@ -1201,4 +1201,4 @@ Nhìn thấy ảnh ông chú áo vàng đã bị quay sang trái với 1 tay là
 
 ![7](https://github.com/LeeDiay/MiniCTF_2022/raw/main/You%20are%20noob/S7.png)
 
-Flag `ISPCTF{c4T_M3_1f_u_C4n?}`
+Flag: `ISPCTF{c4T_M3_1f_u_C4n?}`
