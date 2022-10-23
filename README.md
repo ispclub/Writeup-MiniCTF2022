@@ -9,7 +9,7 @@
 | :----- | :---------- | :-------------- | 
 | [Discord](#Welcome-Discord) | Welcome | `ISPCTF{W3LC0ME_2_M1ni_CTF_90oDLuCK}` | 
 | [Basic Forensic](#Warm-Up-Basic-Forensic) | Warm Up | `ISPCTF{7hAt_warm_up_gnys}` | 
-| [What is Netcat?](#Warm-Up-What-is-Netcat?) | Warm Up | `ISPCTF{Th1s_1s_n3t_c4t}` | 
+| [What is Netcat?](#Warm-Up-What-is-Netcat) | Warm Up | `ISPCTF{Th1s_1s_n3t_c4t}` | 
 | [Abcbof](#Warm-Up-abcbof) | Warm Up | `ISPCTF{B4s1c_Buff3r_0v3rFl0w}` |
 | [Rock, Paper, Scissors](#Warm-Up-RPS) | Warm Up |  `ISPCTF{d0nt_m4k3_7h3_l091c4l_m1s74k3}`  |
 | [Best Avatar](#Misc-Best-Avatar) | Misc | `ISPCTF{ISP_cAptu5e_th3_F1a9}` |
