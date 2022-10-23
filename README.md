@@ -681,6 +681,28 @@ Giải nén file trên được 1 file mp3. Nghe ra là 1 đoạn nhạc. Vì đ
 
 Flag: `ISPCTF{i_am_following_you}`
 
+# Forensics: Japanese Food
+
+#### Challenge
+
+Xipan là một kẻ nghiện đồ ăn Nhật đặc biệt là món sashimi nên đã trang trí mọi thứ trong phòng thành hình món sashimi. Thậm chí, hắn còn ép ca sĩ Tree Poo sáng tác riêng cho hắn một MV liên quan đến món ăn này để xem lúc rảnh rỗi. Biết được điều đó, Bốp quyết định cài cắm mã độc vào MV, khi Xipan mở lên sẽ làm cho máy tính của hắn sẽ tự hủy. Hãy giúp bốp tìm vị trí đặt mã độc để tránh tên Xipan tìm thấy nhé !
+
+[Video](https://youtu.be/N6pjpsWuwjQ)
+
+#### Solution
+
+Bài này yêu cầu ta tìm flag trong vido.
+
+Khi đó trên màn hình sẽ xuất hiện những mảnh flag như:
+
+<img src=https://github.com/ispclub/WUMiniCTF-2022/blob/main/Japanese%20Food/mini2022.png>
+
+Nhưng đó là fake flag, xem đến cuối sẽ xuất hiện một mã QR, scan nó và nhận được flag 
+
+<img src=https://github.com/ispclub/WUMiniCTF-2022/blob/main/Japanese%20Food/mini2022qr.png>
+
+Flag: `ISPCTF{Pe0ple_mAke_1t_complicat3d}` 
+
 # Forensics: Love n Light 
 #### Challenge
 
@@ -788,8 +810,7 @@ Bài cho ta một trang web đăng nhập hoặc đăng ký đăng ký và đăn
 
 Nhưng dây là flag sai, tiếp tục đọc source .css ta  thấy flag
 
-<img src= Writeup-MiniCTF2022/File-chall/PHP-Moon-Cake/PHP-moon-cake/trueflag.png>
-
+<img src= https://raw.githubusercontent.com/Dongkong1908/MiniCTF-2022/main/trueflag.png>
 
 Flag: `ISPCTF{m00n_c4k3_15_t00_sw33t}`
 
