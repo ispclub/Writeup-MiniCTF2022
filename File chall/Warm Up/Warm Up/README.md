@@ -1,15 +1,13 @@
-# Write Up miniCTF2022
 
-# 1. NetCat
+# Warm Up:  NetCat
 
-## Category
-Warm Up - Halston
 
-## Question
+#### Challegen
+
 Can you connect the netcat ? 
 >nc 174.138.21.217 3136
 
-## Solution
+#### Solution
 Chúng ta sẽ kết nối vào `netcat` ngay lập tức flag sẽ hiện ra.
 
 ```
@@ -26,18 +24,14 @@ halston in ~ λ nc 174.138.21.217 3136
 Here your flag: ISPCTF{Th1s_1s_n3t_c4t}
 ```
 
-## Flag
-`ISPCTF{Th1s_1s_n3t_c4t}`
+Flag: `ISPCTF{Th1s_1s_n3t_c4t}`
 
-# 2. abcbof
+# Warm Up: abcbof
 
-## Category
-Warm Up - Halston
-
-## Question
+#### Challegen
 >nc 174.138.21.217 3137
 
-## Solution
+#### Solution
 Khi tải source code về ta có thể nhìn thấy có lỗi tại gets() vì khi nhập vào sẽ không kiểm soát số lượng kí tự được nhập
 ```
 int main(){   
@@ -122,18 +116,16 @@ Chúc mừng bạn đã chiến thắng
 Đây là Flag của bạn:
 ISPCTF{B4s1c_Buff3r_0v3rFl0w}
 ```
-## Flag
-`ISPCTF{B4s1c_Buff3r_0v3rFl0w}`
 
-# 3. RPS
+Flag: `ISPCTF{B4s1c_Buff3r_0v3rFl0w}`
 
-## Category
-Warm Up - I1igma
+# Warm Up: RPS
 
-## Question
+#### Challegen
+
 >nc 174.138.21.217 3138
 
-## Solution
+#### Solution
 Đọc source code ta có thấy chương trình sử dụng `if (strstr(player_turn, loses[computer_turn]))` hàm strstr() để kiểm tra chuỗi người dùng nhập vào `player_turn` có 
 trong chuỗi `loses[computer_turn]` máy tính thua không.
 Nếu có sẽ trả về `true` từ đó ta có 1 lần chiến thắng.
@@ -189,5 +181,5 @@ $ cat flag.txt
 ISPCTF{d0nt_m4k3_7h3_l091c4l_m1s74k3}
 ```
 
-## Flag
-`ISPCTF{d0nt_m4k3_7h3_l091c4l_m1s74k3}`
+
+Flag: `ISPCTF{d0nt_m4k3_7h3_l091c4l_m1s74k3}`
