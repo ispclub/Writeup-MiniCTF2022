@@ -7,7 +7,7 @@
 
 | Title | Category | Flag | 
 | :----- | :---------- | :-------------- | 
-| Discord | Welcome | `ISPCTF{W3LC0ME_2_M1ni_CTF_90oDLuCK}` | 
+| [Discord](https://github.com/ispclub/Writeup-MIniCTF2022/blob/main/README.md#welcome-discord) | Welcome | `ISPCTF{W3LC0ME_2_M1ni_CTF_90oDLuCK}` | 
 | Basic Forensics | Warm Up | `ISPCTF{7hAt_warm_up_gnys}` | 
 | What is Netcat? | Warm Up | `ISPCTF{Th1s_1s_n3t_c4t}` | 
 | Abcbof | Warm Up | `ISPCTF{B4s1c_Buff3r_0v3rFl0w}` |
