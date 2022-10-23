@@ -1189,31 +1189,6 @@ Mở file lên nhận ra được đây là mã Morse. Sử dụng tool [này](h
 
 Flag: `ISPCTF{HOW_CAN_YOU_FIX_IT_?}`
 
-# Crypto: ROTTOR
-
-#### Challenge
-<p>Xipan đã tạo ra mê cung nhằm đánh lạc hướng chúng ta, các bạn hãy theo Bốp để không bị lạc nhé!<p>
-
-[picture.png](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Sau.png)
-
-![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Sau.png)
-
-#### Solution
-
-<p>Tác giả đã cho ta 1 bức ảnh trông khá ngộ nghĩnh, trông khá giống là 1 mã QR, nhưng khi quét thì không được gì?? Lúc này, hint nói rằng "Bạn có biết định dạng chuẩn của 1 mã QR không?" thì sau 1 hồi học về QR thì mình biết mã này bị khuất mất 3 ô vuông định vị ở 3 góc. Việc cần làm lúc này là chèn thêm 3 ô vuông đó vào cho đúng vị trí của nó thôi :D Sau khi photoshop thì ta đã có 1 mã QR hoàn chỉnh:<p>
-
-![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Goc.png)
-
-Sau khi quét thì nhận được 1 bức ảnh với 1 dòng chữ bên dưới trông có vẻ giống form Flag nhưng đã bị mã hóa
-
-![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Quet1.png)
-
-Lúc này mình mới nhớ tên Chall là ROTTOR nên chắc rằng nó có liên quan tới chìa khóa để giải mã dòng chữ kia, tra thêm 1 tí thì mình biết nó được mã hóa bằng mã ROT13
-
-![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Fi.png)
-
-Flag: `ISPCTF{0h_mY_90D_y0u_931_i1}`
-
 # Crypto: You are noob!!
 #### Challenge
 
@@ -1257,3 +1232,29 @@ Nhìn thấy ảnh ông chú áo vàng đã bị quay sang trái với 1 tay là
 ![7](https://github.com/LeeDiay/MiniCTF_2022/raw/main/You%20are%20noob/S7.png)
 
 Flag: `ISPCTF{c4T_M3_1f_u_C4n?}`
+
+# Crypto: ROTTOR
+
+#### Challenge
+<p>Xipan đã tạo ra mê cung nhằm đánh lạc hướng chúng ta, các bạn hãy theo Bốp để không bị lạc nhé!<p>
+
+[picture.png](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Sau.png)
+
+![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Sau.png)
+
+#### Solution
+
+<p>Tác giả đã cho ta 1 bức ảnh trông khá ngộ nghĩnh, trông khá giống là 1 mã QR, nhưng khi quét thì không được gì?? Lúc này, hint nói rằng "Bạn có biết định dạng chuẩn của 1 mã QR không?" thì sau 1 hồi học về QR thì mình biết mã này bị khuất mất 3 ô vuông định vị ở 3 góc. Việc cần làm lúc này là chèn thêm 3 ô vuông đó vào cho đúng vị trí của nó thôi :D Sau khi photoshop thì ta đã có 1 mã QR hoàn chỉnh:<p>
+
+![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Goc.png)
+
+Sau khi quét thì nhận được 1 bức ảnh với 1 dòng chữ bên dưới trông có vẻ giống form Flag nhưng đã bị mã hóa
+
+![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Quet1.png)
+
+Lúc này mình mới nhớ tên Chall là ROTTOR nên chắc rằng nó có liên quan tới chìa khóa để giải mã dòng chữ kia, tra thêm 1 tí thì mình biết nó được mã hóa bằng mã ROT13
+
+![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/ROTTOR/Fi.png)
+
+Flag: `ISPCTF{0h_mY_90D_y0u_931_i1}`
+
