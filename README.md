@@ -802,25 +802,25 @@ Kho báu bị ẩn giấu trong mê cung, chắc chắn phải có cách tìm ra
 
 > Mới đầu vào ta chỉ thấy một bức ảnh làm background, thử inspect xem sources thì ối dồi ôi luôn, một đống code html, có vẻ như flag được giấu ở đây. <br>
 > `Ctrl F ISPCTF` ta tìm được phần đầu của Flag: `ISPCTF{H3_1S_C`
-- >![](images/1.png)
+- >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Keiichi/images/1.png)
 
 > Nếu như phần Flag còn lại cũng nằm trong source này thì chắc chắn là không tìm ra được, cả source đều là html, hoàn toàn không thể khai thác được gì.<br>
 > Lúc này ta cần nghĩ tới file ẩn. Truớc khi nghĩ tới các cách để tìm file ẩn như Bruteforce. Ta cần kiểm tra file `Robots.txt` :))<br>
 
 > Boom 
-- > ![](images/2.png)
+- > ![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Keiichi/images/2.png)
 - > Disallow: `0m3B4ck_Y`, file này đã bị web ẩn đi, và nhìn nó cũng giống với 1 phần của Flag phết nhỉ :))
 
 > Flag lúc này có thêm 1 phần mới: `ISPCTF{H3_1S_C0m3B4ck_Y`<br>
 
 > Truy cập vào file `0m3B4ck_Y` bị ẩn này ta thấy trang có nội dung sau:<br>
-- >![](images/3.png)
+- >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Keiichi/images/3.png)
 
 >  Encode: `MHVfQ2FuX2ZpbmRfaGltfQ==`<br>
 > Nhìn đoạn mã kia có vẻ bị như message ban đầu bị `encode Base64`, dễ dàng decode với <a href="https://kt.gy/tools.html#conv/0u_Can_find_him%7D">kt.gy</a> <br>
 
 - >Ta thu được kết quả:<br>
-![](images/4.png)
+![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Keiichi/images/4.png)
 - > `0u_Can_find_him}`
 
 > Ghép các phần tìm được, ta có Flag hoàn cỉnh: <br>
@@ -833,41 +833,44 @@ Flag: `ISPCTF{H3_1S_C0m3B4ck_Y0u_Can_find_him}`
 
 Ôi, chúng ta gặp rắc rối không nhỏ rồi, hàng rào bảo mật đang ngăn cản ta. 
 
+![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/ISP%20Info/images/0.png)
+
+
 #### Solution
 
 >Khi Inspect trang, một message bị ẩn xuất hiện
 
->![](images/1.png)
+>![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/ISP%20Info/images/1.png)
 
 >Có vẻ message này chỉ chấp nhận `User-agent` là `isper`, bật burpsuite và thay đổi `user-agent` thành `isper`
 
->![](images/2.png)
+>![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/ISP%20Info/images/2.png)
 
 >Một message nữa đã xuất hiện, server đang muốn kiểm tra xem nguồn đưa bạn đến trang web này có được cho phép hay không <br>
 
 - Thêm 1 trường nữa cho header: `referer: https://www.facebook.com/ATTT.PTIT`
->![](images/3.png)
+>![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/ISP%20Info/images/3.png)
 
 >Sau khi send, ta lại nhận được một message nữa: `'Địa chỉ localhost của bạn?'` chắc chắn là `127.0.0.1`
 <br>
 - >Server sẽ forward nếu cung cấp đúng IP, thêm 1 trường nữa vào header: `X-ForWarded-For: 127.0.0.1`<br>Nhấn send ta được : 
 
-- >![](images/4.png)  
+- >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/ISP%20Info/images/4.png)  
 
 >Lần này server yêu cầu ngày tháng, và ngày tháng đó chính là ngày thành lập khoa ATTT. 
 - Osint theo link gợi ý ta tìm được bài viết có ngày, tháng, năm: <a href="https://portal.ptit.edu.vn/hoc-vien-cong-nghe-buu-chinh-vien-thong-thanh-lap-khoa-an-toan-thong-tin/">Link bài viết</a>
 
-- >![](images/5.png)
+- >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/ISP%20Info/images/5.png)
 
 - Thêm trường `date` có dạng sau: `date: Tue, 05 Apr 2022 11:11 GMT`
-- Sau đó send: ![](images/6.png)
+- Sau đó send: ![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/ISP%20Info/images/6.png)
 
 > Lần này lại là `'bạn có biết tiếng Việt không?'`<br>Ta chỉ cần sửa lại phần `Accept-Language` thành `vi-VN,vi`<br>
 > Nhưng mà send xong không ra cái gì :( , author thật nhiễu sự, phải là `vi-vi,vi` thì mới được cơ (chỉ muốn xin 100 điểm hint của các bạn thui ^^).<br>
 > Và cuối cùng `Accept-Language: vi-vi,vi`  
 > Sau khi send thì ta có được flag:
 
-- > ![](images/7.png)
+- > ![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/ISP%20Info/images/7.png)
 
 Flag: `ISPCTF{N0w_Y0u_Kn3w_4b0ut_ISP_Y0ur_W3lC0m3}`
 
@@ -877,22 +880,22 @@ Flag: `ISPCTF{N0w_Y0u_Kn3w_4b0ut_ISP_Y0ur_W3lC0m3}`
 #### Solution
 ##### Bước 1 
 > Mới đầu vào, đạp vào mắt là trang đăng kí, đăng nhập. Chưa cần phải nghĩ tới hack, hãy sử dụng web như một client chân chính.
-- >![](images/2.png)
+- >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/2.png)
 
 > Đầu tiên là tạo tài khoản. Tạo 1 username: `asd`, password: `asd`. Sau đó đăng nhập, ta có 1 `alert` hiện ra:
-- >![](images/1.png)
+- >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/1.png)
 
 > `login success` và không có flag, rồi sao? :( <br>
 > Để ý ở phần `Footer`, cho `robots.txt`
-- >![](images/3.png)<br>
+- >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/3.png)<br>
 >Truy cập vào ta được gợi ý<br>
-- >![](images/4.png)
+- >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/4.png)
 - >Có 1 file ẩn :  `brut3f0rc3`
 - > Có thứ gì đó trong :`'information schema, columns , tables'`<br> Vậy là sẽ tìm được `column_name` trong `columns`, `table_name` trong `tables`. Ok vào file `brut3f0rc3` trước đã
 
 ##### Bước 2
 
-- ><image src="./images/5.png" width="50%"> <br>Vào xong thấy ối dồi ôi luôn :(
+- <image src="https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/5.png" width="50%"> <br>Vào xong thấy ối dồi ôi luôn :(
 
 > Trong khi trải nghiệm web, bạn sẽ phát hiện ra, các button order sản phẩm đã tạo ra 1 truy vấn có thể nhìn thấy trên Url. Các truy vấn này có thể được truy vấn tới tới databases, hoặc là không :(<br>
 - <image src="./images/6.png" width="70%">
@@ -903,7 +906,7 @@ Flag: `ISPCTF{N0w_Y0u_Kn3w_4b0ut_ISP_Y0ur_W3lC0m3}`
 > Vậy bây giờ bắt đầu như nào? :(
 - > Bật BurpSuite lên đã rồi làm gì thì làm :(
 - > Ném request vào Repeater, ta thấy  số cột trả về là `4`
-- > ![](images/7.png)
+- > ![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/7.png)
 - > Biết được số cột trả về là 4, nếu như ta có thể ta có thể tiêm được `union` vào truy vấn này, ta có thể tìm kiếm thông tin như `colum_name,table_name` trong database `information_schema` như đã được gợi ý.
 
 > Vậy kiểm tra xem `union` có thực sự hoạt động hay không<br>
@@ -942,7 +945,7 @@ Tìm `table_name` trong `tables` và `column_name` trong `columns`<br>
 
 > Nhưng đời không như là mơ, cứ tưởng thế là xong thì auth lại chặn truy vấn, cũng phải thôi, đề bài là `sqli_blind` mà :( <br>
  - >Ta thu được username = `myFlag`
- - >![](images/14.png) 
+ - >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/14.png) 
 
  > Hiện tại, ta đang có `table_name` = `sqli_blind`, `username` = `myFlag` và `password` = `''`<br>
  > Nhiệm vụ bây giờ là đi tìm `password`.<br>
@@ -959,23 +962,23 @@ Tìm `table_name` trong `tables` và `column_name` trong `columns`<br>
      - ><image src="./images/17.png">
      - >Kết hợp Mệnh đề `and` để đảm bảo truy vấn đúng thì `select` phải đúng.
      - >Giả sử truyền vào một `username` sai, kết quả trả về sẽ là:<br>
-     - >![](images/18.png)
+     - >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/18.png)
 
 > Vậy là ta đã xác định được truy vấn đúng, tiến hành đưa request vào intruder, để tìm độ dài `password`.
- - > Trong intruder ![](images/15.png)
+ - > Trong intruder ![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/15.png)
  - > Tạo payload như trong `repeater` và thêm nội dung cần kiểm tra là độ dài `password`: 
    - > `username=asd'+and+(select+'isp'+from+sqli_blind+where+username='myFlag'+and+length(password)=§1§)='isp&password=asd&login=`
-   - > ![](images/16.png)<br>
+   - > ![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/16.png)<br>
    - > Thêm 1 biến chạy như trong hình.
    - > Cho biến `run` chạy từ 1 -> 100 (chắc password chỉ tầm 100 đổ về thui )     
-     - > ![](images/19.png)
+     - > ![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/19.png)
    - > Nếu như độ dài của `password` đúng bằng giá chị chạy cả biến `run` thì nội dung trả về sẽ là `login success`, nếu không thì là `username or password is wrong`.
    - > Vậy để dẫn nhận biết là request gửi đi là đúng hay sai, ta thêm `grep-match` với nội dung `'success'`
-     - >![](images/20.png)
+     - >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/20.png)
 > Nhấp `start attack`
 
  - > Tìm hàng nào có cột `success`=`1`. Vậy là đã tìm được độ dài của `password` = `60`
-   - >![](images/21.png)
+   - >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/21.png)
 
 ##### Bước 4
 
@@ -983,7 +986,7 @@ Tìm `table_name` trong `tables` và `column_name` trong `columns`<br>
 > Mục đích của việc này là ta chỉ có thể đem so sánh ký tự, kết quả đúng thì trả về `login success`, sai thì `username or password is wrong`.<br>
 
 > Payload: `username=asd'+and+(select+substring(password,§1§,1)+from+sqli_blind+where+username='myFlag')='§c§&password=asd&login=`
-   - >![](images/22.png)
+   - >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/22.png)
   - > Biến `§1§` đề cắt kí tự thứ `§1§` của `password` ra, `password` như 1 xâu ký tự, mỗi ký tự sẽ được đem so sánh với biến `§c§`
   - > Biến `$1$` chọn payload type là `Numbers` chạy từ `1->60`, vì length password = 60;
   - > Biến `§c§` chạy payload type là `Bruteforce` từ `a->z, 0->9`
@@ -993,12 +996,12 @@ Tìm `table_name` trong `tables` và `column_name` trong `columns`<br>
   - > Cuối cùng nhấn `start-attack` 
 
   - >Nếu bạn không có burpPro thì khoảng vài tiếng sẽ cho ra kết quả sau:
-   - >![](Writeup-MIniCTF2022/File chall/images/23.png)
+   - >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/23.png)
    - > Loại bỏ tất cả các hàng không match được với `success`
    - > Sắp xếp lại `payload1` từ 1->60 đi kèm với `payload2`
-    - > ![](images/24.png)
+    - > ![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/24.png)
     - > Những 60 ký tự cơ, sau đó thì copy lên <a href="https://kt.gy/tools.html#conv/ISPCTF%7BBl1nd_brut3f0rc3_01fg6%7D">kt.gy</a> để dehex vậy là ta có Flag :>
-    - >![](images/25.png)
+    - >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/25.png)
 
 Flag: `ISPCTF{Bl1nd_brut3f0rc3_01fg6}`
 
