@@ -959,7 +959,7 @@ Tìm `table_name` trong `tables` và `column_name` trong `columns`<br>
 >Nhưng trước hết ta cần biết độ dài của `password` bằng bao nhiêu.<br>
  - >Đưa request vào repeater để kiểm tra payload có chạy chuẩn không :(
     - > Ta đang dùng `username, password` đã được đăng kí, nên nếu một truy vấn đúng thì nội dung trả về phải có message `login success, not flag for you`
-     - ><image src="./images/17.png">
+     - ><image src="https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/17.png">
      - >Kết hợp Mệnh đề `and` để đảm bảo truy vấn đúng thì `select` phải đúng.
      - >Giả sử truyền vào một `username` sai, kết quả trả về sẽ là:<br>
      - >![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/Sqli%20Blind/images/18.png)
