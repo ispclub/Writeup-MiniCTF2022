@@ -893,7 +893,7 @@ Kéo xuống cuối ta thấy dòng chữ F12. Có nghĩa là kiểm tra source 
 
 <img src=https://raw.githubusercontent.com/Dongkong1908/MiniCTF-2022/main/Get%20Out%20Of%20Here/get_out_2.png >
 
-Ấn F12 (inspect) ta thấy luôn flag ở phần Element. Do flag có thể được giấu trong từng file bằng cách để flag ở comment của dạng file đó, để flag không trực tiếp hiện thẳng trên trang web mà mình có thể nhìn thấythấy.
+Ấn F12 (inspect) ta thấy luôn flag ở phần Element. Do flag có thể được giấu trong từng file bằng cách để flag ở comment của dạng file đó, để flag không trực tiếp hiện thẳng trên trang web mà mình có thể nhìn thấy.
 
 <img src= https://raw.githubusercontent.com/Dongkong1908/MiniCTF-2022/main/Get%20Out%20Of%20Here/get_out_3.png>
 
