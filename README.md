@@ -19,7 +19,6 @@
 | [EZ RE](#RE-EZ-RE) | RE | `ISPCTF{d35cr4mbl3_tH3_cH4r4cT3r5_ff63b0}` |
 | [Loop Key](#RE-Loop-Key) | RE | `ISPCTF{T01_co_kh1en_ban_vu1_12112003}` |
 | [XOR](#RE-XOR) | RE | `ISPCTF{N0r_1s_s0_M4g1c}` |
-| [Lost Obfuscation](#RE-Lost-Obfuscation) | RE | `ISPCTF{d306fu5c4710n_15_5h0r7357_w4y_70_00f3d}` |
 | [Correct File?](#Forensics-Correct-File) | Forensics | `ISPCTF{i_am_following_you}` |
 | [Japanese Food](#Forensics-Japanese-Food) | Forensics | `ISPCTF{Pe0ple_mAke_1t_complicat3d}` |
 | [Love n Light](#Forensics-Love-n-Light) | Forensics | `ISPCTF{Fr0m_kA1z_w1tH_L0v3}` |
