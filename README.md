@@ -62,7 +62,9 @@ Tập hợp để đi đánh boss thôi nàoo!
 
 #### Solution
 
-Tải file svg về và mở lên, không thấy gì bất thường cả. Ta thử inspect lên thấy các đoạn < tspan > có liên kết với nhau. Ghép chúng lại ta ra được flag
+<p>Tải file svg về và mở lên, không thấy gì bất thường cả. Ta thử inspect lên thấy các đoạn < tspan > có liên kết với nhau. Ghép chúng lại ta ra được flag<p>
+<p> Hoặc chúng ta có thể mở file dưới dạng text ( mở bằng notepad ) cũng có thể xem được giá trị được ghi trong file .svg đó. <p>
+
 
 <img src= https://raw.githubusercontent.com/Dongkong1908/MiniCTF-2022/main/Basic%20Forensic/basic_forensics.png>
 
@@ -864,13 +866,14 @@ Flag: `ISPCTF{r0und_n_r0und_1908absc}`
 Yummy bánh trung thu ngon thật đấy. Có gì ngon nghẻ đằng sau lớp áo đẹp đẽ đó vậy?
 #### Solution
 
-Bài cho ta một trang web đăng nhập hoặc đăng ký đăng ký và đăng nhập bình thường nhưng chẳng có gì cả. Đọc source ta thấy flag
+Bài cho ta một trang web đăng nhập hoặc đăng ký đăng ký và đăng nhập bình thường nhưng chẳng có gì cả.<br>
+Thông thường các trang web sẽ được viết bởi các file .html (file cấu trúc của web ), .css( file biểu diễn đồ họa cho web), .js (các tính năng khác cho web), và chúng ta có thể đọc được các file public qua inspect (kiểm tra) web, đọc các file public ở phần Source trên thanh công cụ của inspect. Đọc source ở phần element (cũng như file index.html trong Source) ta thấy flag:
 
 `ISPCTF{134rn1n9_web_15_3z}`
 
 <img src= https://github.com/dnamgithub33/WUMiniCTF-2022/blob/main/fakeflag.PNG>
 
-Nhưng dây là flag sai, tiếp tục đọc source .css ta  thấy flag
+Nhưng dây là flag sai, tiếp tục đọc source của file style_in.css ta thấy flag:
 
 <img src= https://raw.githubusercontent.com/Dongkong1908/MiniCTF-2022/main/trueflag.png>
 
