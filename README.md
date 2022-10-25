@@ -985,9 +985,10 @@ Thêm 1 trường nữa cho header: `referer: https://www.facebook.com/ATTT.PTIT
 
 ![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/ISP%20Info/images/3.png)
 
-<p>Sau khi send, ta lại nhận được một message nữa: `'Địa chỉ localhost của bạn?'` chắc chắn là `127.0.0.1`<p>
+Sau khi send, ta lại nhận được một message nữa: `'Địa chỉ localhost của bạn?'` chắc chắn là `127.0.0.1`
 
-<p>Server sẽ forward nếu cung cấp đúng IP, thêm 1 trường nữa vào header: `X-ForWarded-For: 127.0.0.1`<br>Nhấn send ta được : <p>
+Server sẽ forward nếu cung cấp đúng IP, thêm 1 trường nữa vào header: `X-ForWarded-For: 127.0.0.1`
+<br>Nhấn send ta được :
 
 ![](https://raw.githubusercontent.com/giangnamG/wu-miniCTFd22/master/Web/ISP%20Info/images/4.png)  
 
