@@ -1181,8 +1181,9 @@ Flag: `ISPCTF{Bl1nd_brut3f0rc3_01fg6}`
 
 #### Solution
 
-<p> Theo như tên đề bài chúng ta hãy lên GOOGLE tìm tên tool basecrack.
-[tool basecrack](https://basecrack.herokuapp.com/) <p> 
+Theo như tên đề bài chúng ta hãy lên GOOGLE tìm tên tool basecrack 
+
+[tool basecrack](https://basecrack.herokuapp.com/)
 
 <p> Giải mã liên tục lặp đi lặp lại với Basecrack. Cuối cùng, ta sẽ tìm ra được flag<p>
 
@@ -1217,7 +1218,7 @@ Challenge này cung cấp một đoạn mã khá ngắn. Nếu như không nhậ
 
 ![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/UwU/1.png)
 
-Có thể vào luôn tranng web đầu tiên để thử, ở đây mình thử paste tên của challenge vào để thử tìm ra được gì:
+Có thể vào luôn trang web đầu tiên để thử, ở đây mình thử paste tên của challenge vào để thử tìm ra được gì:
 
 ![search](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/UwU/2.png)
 
@@ -1257,7 +1258,7 @@ Sau khi quét thì nhận được 1 bức ảnh với 1 dòng chữ bên dướ
 
 ![1](https://raw.githubusercontent.com/LeeDiay/MiniCTF_2022/main/You%20are%20noob/S1.png)
 
-Link dẫn tới trang cá nhân instagram của 1 hecke lỏ, hắn bảo rằng "Đố anh bắt được em"
+Link dẫn tới trang cá nhân instagram của 1 hecker lỏd, hắn bảo rằng "Đố anh bắt được em"
 
 ![2](https://github.com/LeeDiay/MiniCTF_2022/raw/main/You%20are%20noob/S2.png)
 
